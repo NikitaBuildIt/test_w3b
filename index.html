@@ -15,7 +15,7 @@
                 <input type="text" placeholder="Task subscription" id="subscription">
             </div>
             <div>
-                <select id="skills" name="skills">
+                <select id="country" name="country">
                     <option value="test"disabled selected hidden>Select a category</option>
                     <option value="All">All</option>
                     <option value="Russia">Russia</option>
@@ -36,16 +36,16 @@
             tg.expand();
 
             save.addEventListener("click", ()=>{
-                let about = document.getElementById("about").value;
-                let stack = document.getElementById("stack").value;
-                let skills = document.getElementById("skills").value;
+                let task_name = document.getElementById("name").value;
+                let subscription = document.getElementById("subscription").value;
                 let country = document.getElementById("country").value;
+                let price = document.getElementById("price").value;
 
                 let data = {
-                    about: about,
-                    stack: stack,
-                    skills: skills,
+                    name: task_name,
+                    subscription: subscription,
                     country: country,
+                    price: price,
                 };
                 tg.sendData(JSON.stringify(data));
 
