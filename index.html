@@ -9,26 +9,26 @@
     <body>
         <form id="form">
             <div>
-                <input type="text" placeholder="About me" id="about">
+                <input type="text" placeholder="Task name" id="name">
             </div>
             <div>
-                <input type="text" placeholder="Tech stack" id="stack">
+                <input type="text" placeholder="Task subscription" id="subscription">
             </div>
             <div>
                 <select id="skills" name="skills">
                     <option value="test"disabled selected hidden>Select a category</option>
-                    <option value="WEB 3.0 Development">WEB 3.0 Development</option>
-                    <option value="WEB 2.0 Development">WEB 2.0 Development</option>
-                    <option value="Design">Design</option>
-                    <option value="Video editing/filming">Video editing/filming</option>
-                    <option value="Marketing">Marketing</option>
+                    <option value="All">All</option>
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="China">China</option>
                 </select>
             </div>
             <div>
-                <input type="text" placeholder="Country" id="country">
+                <input type="text" placeholder="Price" id="price">
             </div>
         </form>
-        <button id="save">Save</button>
+        <button id="create">Create</button>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
             let tg = window.Telegram.WebApp;
